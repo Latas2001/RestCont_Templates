@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+    {% load staticfiles %}
+
+    {% block title %} 
+    
+        {{ title }} 
+    
+    {% endblock %}
+
+    {% block content %}
+    
+        <header class="wrap-title">
+            <div class="container">
+                <h1 class="page-title">{{ title }}</h1>
+    
+                <ol class="breadcrumb hidden-xs">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li class="active">{{ title }}</li>
+                </ol>
+            </div>
+        </header>
+              
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="post animated fadeInLeft animation-delay-8">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h3 class="post-title"><a href="single.html" class="transicion">Facebook Account Management and/or Publicity Campaign</a></h3>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="{% static 'WebDevelopment/img/7.jpg' %}" class="img-post img-responsive" alt="Image">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>
+                                            As a business involve on on social networking, we believe that facebook account management is an important part of a company image. As statistics show us on a pewinternet.com article, <strong>71%</strong> of people using social networks use facebook more than anything else, so it is quite a big market to cover and if you, as a company, are smart enough to invest on a publicity campaign and  you will, as a fact, get more views on your web content ( web sites, apps, facebook landing page ) .
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-9 col-sm-8">
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-4">
+                                        <a href="{% url 'pricing' %}" class="pull-right">Get prices &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article> <!-- post -->
+                    <article class="post animated fadeInLeft animation-delay-11">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h3 class="post-title"><a href="single.html" class="transicion">SEO and/or Business on Google</a></h3>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="{% static 'WebDevelopment/img/2.jpg' %}" class="img-post img-responsive" alt="Image">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>You know how important is google to the world, right? Well everybody uses google, <strong>EVERYBODY!</strong> and is really important for a company to be on the google spotlight so everybody may have the chance to see how awesome your company is.</p>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-9 col-sm-8">
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-4">
+                                        <a href="{% url 'pricing' %}" class="pull-right">Get prices &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article> <!-- post -->
+                    <article class="post animated fadeInLeft animation-delay-14">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h3 class="post-title"><a href="single.html" class="transicion">We make Google better for you</a></h3>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img src="{% static 'WebDevelopment/img/1.jpg' %}" class="img-post img-responsive" alt="Image">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Businessinsider.com has an excelent artilce in wich suggests on how google may <strong>improve your business</strong>; well and all because google managment tools are a great way to realize the <strong>pros</strong> and <strong>cons</strong> of your site, just like what exactly draws <strong>people</strong> to your site, how many people just aren’t interested at all and why?, how your site is being <strong>shared</strong>? and go on.</p>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-9 col-sm-8">
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-4">
+                                        <a href="{% url 'pricing' %}" class="pull-right">Get prices &raquo;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article> <!-- post -->
+                    
+                </div> <!-- col-md-8 -->
+                <div class="col-md-4">
+                    <aside class="sidebar">
+                        <div class="block">
+                            <div class="input-group">
+                              <input type="text" placeholder="Search..." class="form-control">
+                              <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                              </span>
+                            </div><!-- /input-group -->
+                        </div>
+    
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><i class="fa fa-comments"></i> Customers recomendations</div>
+                            <div class="panel-body">
+                                <ul class="comments-sidebar">
+                                    <li>
+                                        <img src="{% static 'WebDevelopment/img/client.jpg' %}" class="img-responsive" alt="Image">
+                                        <h4><a href="#">Andrew</a> in <a href="#">Lorem ipsum Fugiat elit occaecat aute nisi</a></h4>
+                                        <p>Lorem ipsum Occaecat ut esse amet ut eiusmod laborum cillum voluptate do laboris dolor ut elit aliquip velit ut nulla anim ...</p>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'WebDevelopment/img/client2.jpg' %}" class="img-responsive" alt="Image">
+                                        <h4><a href="#">Andrew</a> in <a href="#">Lorem ipsum Fugiat elit occaecat aute nisi</a></h4>
+                                        <p>Lorem ipsum Occaecat ut esse amet ut eiusmod laborum cillum voluptate do laboris dolor ut elit aliquip velit ut nulla anim ...</p>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'WebDevelopment/img/client6.jpg' %}" class="img-responsive" alt="Image">
+                                        <h4><a href="#">Andrew</a> in <a href="#">Lorem ipsum Fugiat elit occaecat aute nisi</a></h4>
+                                        <p>Lorem ipsum Occaecat ut esse amet ut eiusmod laborum cillum voluptate do laboris dolor ut elit aliquip velit ut nulla anim ...</p>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'WebDevelopment/img/client4.jpg' %}" class="img-responsive" alt="Image">
+                                        <h4><a href="#">Andrew</a> in <a href="#">Lorem ipsum Fugiat elit occaecat aute nisi</a></h4>
+                                        <p>Lorem ipsum Occaecat ut esse amet ut eiusmod laborum cillum voluptate do laboris dolor ut elit aliquip velit ut nulla anim ...</p>
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'WebDevelopment/img/client5.jpg' %}" class="img-responsive" alt="Image">
+                                        <h4><a href="#">Andrew</a> in <a href="#">Lorem ipsum Fugiat elit occaecat aute nisi</a></h4>
+                                        <p>Lorem ipsum Occaecat ut esse amet ut eiusmod laborum cillum voluptate do laboris dolor ut elit aliquip velit ut nulla anim ...</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside> <!-- Sidebar -->
+                </div> 
+            </div> <!-- row -->
+        </div> <!-- container  -->
+    
+    {% endblock %}

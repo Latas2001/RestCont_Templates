@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %} 
+
+    {{ title }} 
+
+{% endblock %}
+
+{% block content %}
+
+    <header class="wrap-title">
+        <div class="container">
+            <h1 class="page-title">{{ title }}</h1>
+
+            <ol class="breadcrumb hidden-xs">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li class="active">{{ title }}</li>
+            </ol>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="services">
+            <div class="row">
+                <div class="col-xs-12">
+                    <section class="text-center">
+                        <p class="lead lead-lg"><strong>Web Development</strong> & <strong>Administrative Systems</strong></p>
+                        <a href="#" class="btn btn-lg btn-success">Hire Us Now</a>
+                    </section>
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <section class="service-item">
+                    <div class="col-md-6">
+                        <h2>Web site development</h2>
+                        <p>Get an <strong>incredible and custom web site</strong> in wish you can show your <strong>clients</strong> how well design your business is, your objectives as a company or even your products. Every important public <strong>information</strong> you own as company will be appreciated by all your clients as a <strong>visible</strong> and more <strong>professional detail</strong>.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item-icon hidden-xs text-center">
+                            <i class="glyphicon fa-15x glyphicon-globe"></i>
+                        </div>
+                    </div>
+                </section> <!-- service-item -->
+            </div> <!-- row -->
+            <div class="row">
+                <section class="service-item">
+                    <div class="col-md-6 col-md-push-6">
+                        <h2>Custom software solutions</h2>
+                        <p><strong>Improve</strong> your business management with <strong>custom</strong> <strong>administrative tools</strong> for your daily corporate activity. Get <strong>100% custom software</strong> which is developed on the best <strong>stable</strong> and <strong>scalable</strong> development architectures we know how to use.</p>
+                    </div>
+                    <div class="col-md-6 col-md-pull-6">
+                        <div class="service-item-icon hidden-xs text-center">
+                            
+                            <span class="glyphicon fa-15x glyphicon-list-alt" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </section> <!-- service-item -->
+            </div> <!-- row -->
+            <div class="row">
+                <section class="service-item">
+                    <div class="col-md-6">
+                        <h2>Monthly softwarem aintenance</h2>
+                        <p>Let’s face it, software has to be <strong>updated</strong> and in constant <strong>maintenance</strong> for better <strong>improvement</strong>, that’s why we don’t leave our customers by themselves with all the <strong>incredible stuff</strong> we deliver to them, get <strong>24/7 support</strong> online from our team, we chose to be a part of <strong>your company’s improvement</strong> because <strong>we care</strong>.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item-icon hidden-xs text-center">
+                            <i class="glyphicon fa-15x glyphicon-time"></i>
+                        </div>
+                    </div>
+                </section> <!-- service-item -->
+            </div> <!-- row -->
+        </section>
+    </div> <!-- container -->
+
+{% endblock %}

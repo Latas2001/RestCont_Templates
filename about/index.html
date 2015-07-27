@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %} 
+
+    {{ title }} 
+
+{% endblock %}
+
+{% block content %}
+
+        <header class="wrap-title">
+            <div class="container">
+                <h1 class="page-title">{{ title }}</h1>
+
+                <ol class="breadcrumb hidden-xs">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li class="active">{{ title }}</li>
+                </ol>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="lead lead-lg text-center animated bounceInLeft animation-delay-12">Get your <strong>buisiness contruction design</strong>, <strong>online profile</strong>, <strong>Web Site</strong>, <strong>personal CVS</strong> <br> <strong>everything-design</strong>, <strong>digital marketing</strong> and <strong>MORE</strong> with us</p>
+                </div>
+
+                <div class="col-md-8">
+                    <section class="animated fadeInDown animation-delay-8">
+                        <h2 class="section-title">About us</h2>
+                        <img src="{% static 'WebDevelopment/img/team.jpg' %}" class="img-responsive imageborder" alt="Image">
+                        <p class="p-lg">We are a dedicated <strong>project development</strong> company, we will take care of you and your company image online.</p>
+                        <h4>Other information</h4>
+                        <p class="p-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ne albuci eorum <strong>disciplina</strong> invenerit gravissimis usque, voluptati aristippi maestitiam intuemur, ibidem platonem eveniet allevatio expectant reddidisti magnus quis. Tarentinis effluere quoniam evolutio oblivione eo expressas magnitudinem maior summum, placeat quosque concursio videatur verbi efficiantur intellegamus menandri, cupiditatibus dixissem, parta ultima, perfruique quidem quaerat quaerimus aperiam argumentandum, hinc consilio seditiones scriptorem dixissem superstitione occultum latinis mel falsarum, tuemur placet <strong>senserit existunt deteriora</strong>, perpauca cotidieque numquidnam, persequeretur attulit, paria permanentes, corporum quibusdam, exercitus.</p>
+                    </section>
+                    <section  class="animated fadeIn animation-delay-10">
+                        <h3 class="section-title">Services</h3>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                            Collapsible Group Item #1
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veniam quidem perferendis quisquam.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+                                            Collapsible Group Item #2
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veniam quidem perferendis quisquam.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
+                                            Collapsible Group Item #3
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veniam quidem perferendis quisquam.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Our skills</div>
+                        <div class="panel-body">
+                            <section>
+                                <h4 class="section-title">Web development knowledge</h4>
+                                <h5>HTML 5</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                        <span class="sr-only">100% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>CSS 3</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                        <span class="sr-only">100% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>Javascript</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                        <span class="sr-only">80% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>Jquery</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                        <span class="sr-only">50% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>Bootstrap</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                        <span class="sr-only">85% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>Responsive Desing</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                        <span class="sr-only">85% Complete</span>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section>
+                                <h4 class="section-title">Architecture & Design knowledge</h4>
+                                <h5>Autocad</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                        <span class="sr-only">100% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>3ds Max</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                        <span class="sr-only">85% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>Revit</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                        <span class="sr-only">100% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>Photoshop</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                        <span class="sr-only">85% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>Illustrator</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                        <span class="sr-only">70% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>After Effects</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                        <span class="sr-only">60% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>Premiere</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                        <span class="sr-only">85% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>Artlantis</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                        <span class="sr-only">100% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>Office</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                        <span class="sr-only">100% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>Vray</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                        <span class="sr-only">70% Complete</span>
+                                    </div>
+                                </div>
+                                <h5>Opus</h5>
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                        <span class="sr-only">50% Complete</span>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <h4 class="section-title">Languages</h4>
+                            <h5>English</h5>
+                            <div class="progress progress-sm">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    <span class="sr-only">70% Complete</span>
+                                </div>
+                            </div>
+                            <h5>Spanish</h5>
+                            <div class="progress progress-sm">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                    <span class="sr-only">100% Complete</span>
+                                </div>
+                            </div>
+                            <h5>French</h5>
+                            <div class="progress progress-sm">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                    <span class="sr-only">30% Complete</span>
+                                </div>
+                            </div>
+                            <h5>Germany</h5>
+                            <div class="progress progress-sm">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                                    <span class="sr-only">10% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- container -->
+
+{% endblock %}
